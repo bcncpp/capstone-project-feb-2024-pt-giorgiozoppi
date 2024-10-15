@@ -8,7 +8,6 @@ def convert_csv_to_parquet(csv_file, parquet_file):
 
 if __name__=="__main__":
     print("Converting CSV to Parquet...")
-    for i in range(1, 11):
-        csv_file = f"dataset_hotel_{i}.csv"
-        parquet_file = f"dataset_hotel_{i}.parquet"
-        convert_csv_to_parquet(csv_file, parquet_file)
+    csv_file = f"hotel_reviews.csv"
+    parquet_file = f"hotel_reviews.parquet"
+    convert_csv_to_parquet(csv_file, parquet_file)
